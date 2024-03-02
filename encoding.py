@@ -1,18 +1,24 @@
 import string
-alphabet = string.ascii_lowercase
-space = " "
-punctuation = string.punctuation
-numberd = string.digits
-word = input("Please type a word: ").lower()
-encrypted_word = ""
-for letter in word:
-  if letter in alphabet:
-    original_position = alphabet.index(letter)
-    new_position = (original_position + 2) % 26
-    encrypted_word = encrypted_word + alphabet[new_position]
-    #encrypted_word += alphabet[new_position]
-  else:
-    #encrypted_word += letter
-    encrypted_word = encrypted_word + letter
 
-print (f"Here is the encrypted word: {encrypted_word}")
+def encrypt(message, shift):
+  alphabet = string.ascii_lowercase
+  encrypted_message = ""
+
+  for letter in message:
+    if letter.lower() in alphabet:
+       original_position = alphabet.index(letter.lower())
+       new_position = (original_position + shift) % 26
+       encrypted_letter = alphabet[new_position]
+       if letter.isupper():
+          encrypted_letter = encrypted_letter.upper()
+       encrypted_message += encrypted_letter
+    else:
+        encrypted_message += letter
+  print(f"Here is the encrypted message: {encrypted_message}")
+
+
+user_message = input("Enter a message: ")
+shift_number = int(input("Enter a shift number: "))
+
+
+encrypt(message = user_message, shift = shift_number)
