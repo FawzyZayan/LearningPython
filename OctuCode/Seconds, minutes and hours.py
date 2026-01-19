@@ -1,6 +1,5 @@
-total_seconds = input("Please type the number of seconds: ")
-int_seconds = int(total_seconds)
-hours = int_seconds // 3600
-minutes = int_seconds % 60
-seconds = int_seconds % 1
-print(total_seconds, "seconds equals", hours, "hours,", minutes, "minutes and", seconds, "seconds")
+total_seconds = int(input("Enter the duration in seconds: "))
+hours = total_seconds // 3600
+minutes = total_seconds % 60
+seconds = total_seconds % 1
+print("The duration is: ", hours, "hours,", minutes, "minutes and", seconds, "seconds")
