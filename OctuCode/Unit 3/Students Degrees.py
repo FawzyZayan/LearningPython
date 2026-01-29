@@ -1,4 +1,4 @@
-degree = int(input("Enter your degree in the Exam: "))
+degree = float(input("Enter your degree in the Exam: "))
 if degree >= 90:
   print("Very Good!")
 elif degree >= 75:
