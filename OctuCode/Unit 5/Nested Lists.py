@@ -5,7 +5,3 @@ basket = [ [ "Apples", "Bananas", "Oranges", "Berries", "Strawberry" ], [ "Water
 basket.extend([ "Candy", "Chips", "Cake", "Cookies", "Donuts" ])
 
 print(basket)
-
-time.sleep(2)
-
-print("__________________________________________________________________________________________________________")
