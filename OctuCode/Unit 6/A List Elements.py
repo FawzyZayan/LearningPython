@@ -1,3 +1,6 @@
-colors = [ "Red", "Blue", "Yellow", "Black", "Grey" ]
+colors = [ "Red", "Blue", "Yellow", "Green", "Black" ]
 for y in colors:
-  print(y)
+  if y == "Blue":
+    print(f"{y} is my Favorite Color!")
+  else:
+    print(y)
