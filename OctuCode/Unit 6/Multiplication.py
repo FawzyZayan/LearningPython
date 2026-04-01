@@ -12,4 +12,4 @@ print(f"\nMultiplicaton Table for {number}: \n")
 
 for n in range(1,11):
   result = number * n
-  print(f"{number} * {n} = {result}")
+  print(f"{number} x {n} = {result}")
