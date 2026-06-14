@@ -1,0 +1,7 @@
+import time
+
+basket = [ [ "Apples", "Bananas", "Oranges", "Berries", "Strawberry" ], [ "Water", "Milk", "Coffee", "Tea", "Juice" ] ]
+
+basket.extend([ "Candy", "Chips", "Cake", "Cookies", "Donuts" ])
+
+print(basket)
