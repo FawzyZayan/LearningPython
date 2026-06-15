@@ -5,6 +5,7 @@ red_queen = {
   "pages": 283,
   "is_many": True,
   "rating": 4.1,
+  "copies": "Over 5M"
 }
 
 print(red_queen["author"])
