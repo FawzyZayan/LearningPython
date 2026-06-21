@@ -16,26 +16,10 @@ while True:
     contacts["number"] = number = int(input("Enter the contact's number: "))
     
     print(f"\n{name} was added successfully...\n")
-    print("Contact Management\n")
-    user_choice = int(input("""
-    1- Add Contact
-    2- View Contact
-    3- Edit a Contact
-    4- Exit
-
-    Please choose a nuber from 1 to 4: """))
     continue
   
   elif user_choice == 2:
     print(contacts)
-    print("Contact Management\n")
-    user_choice = int(input("""
-    1- Add Contact
-    2- View Contact
-    3- Edit a Contact
-    4- Exit
-
-    Please choose a nuber from 1 to 4: """))
     continue
   
   elif user_choice == 3:
@@ -43,14 +27,6 @@ while True:
     contacts["name"] = name = input("Enter the contact's name: ")
     contacts["number"] = number = int(input("Enter the contact's number: "))
     print("\nSuccess...\n")
-    print("Contact Management\n")
-    user_choice = int(input("""
-    1- Add Contact
-    2- View Contact
-    3- Edit a Contact
-    4- Exit
-
-    Please choose a nuber from 1 to 4: """))
     continue
   
   elif user_choice == 4:
@@ -58,4 +34,4 @@ while True:
     break
     
   else:
-    print("Please run the program again and enter a number from 1 to 4")
+    print("Invalid Input")
