@@ -12,23 +12,30 @@ while True:
 
   if user_choice == 1:
     contacts["ID"] = ID = input("Enter the contact's ID: ")
-    contacts["name"] = name = input("Enter the contact's name: ")
-    contacts["number"] = number = int(input("Enter the contact's number: "))
-    
-    print(f"\n{name} was added successfully...\n")
-    continue
+    if ID.isdigit():  
+      contacts["name"] = name = input("Enter the contact's name: ")
+      contacts["number"] = number = input("Enter the contact's number: ")
+      
+      print(f"\n{name} was added successfully...\n")
+    else:
+      print("Enter a number...")
+      continue
   
   elif user_choice == 2:
     print(contacts)
     continue
   
   elif user_choice == 3:
-    contacts["ID"] = ID = input("Enter the contact's ID: ")
-    contacts["name"] = name = input("Enter the contact's name: ")
-    contacts["number"] = number = int(input("Enter the contact's number: "))
-    print("\nSuccess...\n")
-    continue
-  
+    contacts["ID"] = ID_to_edit = input("Enter the contact's ID to edit: ")
+    if ID_to_edit in contacts["ID"]:
+      contacts["name"] = new_name = input("Enter the contact's name: ")
+      contacts["number"] = new_number = int(input("Enter the contact's number: "))
+      print("\nSuccess...\n")
+    
+    else:
+      print(f"Sorry, {ID_to_edit} is not found...")
+      continue
+    
   elif user_choice == 4:
     print("Exiting the Program...")
     break
