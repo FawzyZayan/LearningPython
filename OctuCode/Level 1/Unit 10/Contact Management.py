@@ -1,6 +1,6 @@
 contacts = {}
 
-print("Contact Management\n")
+print("Contact Management")
 user_choice = int(input("""
 1- Add Contact
 2- View Contact
