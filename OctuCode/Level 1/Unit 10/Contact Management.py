@@ -26,7 +26,7 @@ while True:
     continue
   
   elif user_choice == 3:
-    contacts["ID"] = ID_to_edit = input("Enter the contact's ID to edit: ")
+    ID_to_edit = input("Enter the contact's ID to edit: ")
     if ID_to_edit in contacts["ID"]:
       contacts["name"] = new_name = input("Enter the contact's name: ")
       contacts["number"] = new_number = int(input("Enter the contact's number: "))
