@@ -11,10 +11,13 @@ while True:
   Please choose a nuber from 1 to 4: """))
 
   if user_choice == 1:
-    contacts["ID"] = ID = input("Enter the contact's ID: ")
-    if ID.isdigit():  
-      contacts["name"] = name = input("Enter the contact's name: ")
-      contacts["number"] = number = input("Enter the contact's number: ")
+    ID = input("Enter the contact's ID: ")
+    if ID.isdigit():
+      name = input("Enter the contact's name: ")
+      number = input("Enter the contact's number: ")
+      
+      contacts[ID] = {"Name": name,
+                      "Number": number}
       
       print(f"\n{name} was added successfully...\n")
     else:
@@ -27,9 +30,9 @@ while True:
   
   elif user_choice == 3:
     ID_to_edit = input("Enter the contact's ID to edit: ")
-    if ID_to_edit in contacts["ID"]:
-      contacts["name"] = new_name = input("Enter the contact's name: ")
-      contacts["number"] = new_number = int(input("Enter the contact's number: "))
+    if ID_to_edit in contacts[ID]:
+      new_name = input("Enter the contact's name: ")
+      new_number = int(input("Enter the contact's number: "))
       print("\nSuccess...\n")
     
     else:
