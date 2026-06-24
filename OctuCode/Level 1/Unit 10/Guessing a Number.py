@@ -2,10 +2,7 @@ import random
 import os
 
 def clear_screen():
-  if os.name == "nt":
-    os.system("cls")
-  else:
-    os.system("clear")
+  os.system("cls" if os.name == "nt" else "clear")
 
 random_number = random.randint(1, 10)
 
