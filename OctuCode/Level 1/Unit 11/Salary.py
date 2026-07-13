@@ -1,3 +1,5 @@
+import time
+
 def calculate_tax(income):
   return income * 0.15
 
@@ -12,4 +14,12 @@ bonus = float(input("Enter the bonus you got: "))
 
 final_salary = calculate_total_salary(base_salary, bonus)
 
+
+time.sleep(3)
+print("Calculating your Total Salary... Please Wait")
+time.sleep(2)
+print("Calculating the Tax Amount... Please Wait")
+time.sleep(2)
+print("Calculating the Final Salary... Please Wait")
+time.sleep(2)
 print(f"Final Salary after tax is: ⃁{final_salary}")
