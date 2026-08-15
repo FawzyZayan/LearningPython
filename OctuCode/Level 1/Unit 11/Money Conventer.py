@@ -49,7 +49,7 @@ rates = {
     "RMB": 6.75
 }
 
-user_currency = input("Choose a currency to convert from: ").upper()
+user_currency = input("\nChoose a currency to convert from: ").upper()
 
 def conversion():
   
