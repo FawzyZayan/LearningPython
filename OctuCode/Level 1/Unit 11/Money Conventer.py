@@ -82,7 +82,17 @@ def conversion():
         
         if user_currency not in rates or target_currency not in rates:
             print("Invalid currency. Conversion Canceled.")
-            return
+            time.sleep(3)
+            clear_screen()
+            showing()
+            print("\n________________________________________________________________________________\n")
+            print("""
+                  USD = 1.0
+                  EUR = 0.87
+                  EGP = 50.17
+                  RMB = 6.75""")
+            user_currency = input("\nChoose a currency to convert from: ").upper()
+            conversion()
 
         if rates[user_currency] < rates[target_currency]:
             exchange_rate = rates[target_currency] / rates[user_currency]
